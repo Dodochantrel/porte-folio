@@ -1,0 +1,96 @@
+export const Projects: Project[] = [
+  {
+    title: "Portalp Chrono",
+    shortDescription: `Une application web pour consulter en temps réel les commandes de l'usine Portalp directement connectée à SAP.`,
+    description: ``,
+    technos: [
+      "Angular",
+      "NestJS",
+      "PostgreSQL",
+      "PrimeNG",
+      "Tailwind",
+      "Docker",
+      "GITLAB",
+      "Jest",
+      "TypeOrm",
+      "CI/CD",
+      "SAP",
+      "Keycloak",
+    ],
+  },
+  {
+    title: "Portalp Stock",
+    shortDescription: `Une application web pour gérer les stocks de pièces chez Portalp.`,
+    description: ``,
+    technos: [
+      "Odoo",
+      "Angular",
+      "NestJS",
+      "PostgreSQL",
+      "Angular Material",
+      "PrimeNG",
+      "Docker",
+      "GITLAB",
+      "Jest",
+      "TypeOrm",
+      "CI/CD",
+      "Keycloak",
+      "EntraID",
+    ],
+  },
+  {
+    title: "Interface ERP - GMAO",
+    shortDescription: `Une api de communication entre un ERP maison et les GMAO des client de Portalp.`,
+    description: ``,
+    technos: ["Laravel", "Angular", "MariaDB", "Docker", "GITLAB", "CI/CD"],
+  },
+  {
+    title: "PFM Railway",
+    shortDescription: `Une application pour la gestion de l'activité ferroviaire de chez Portalp.`,
+    description: ``,
+    technos: [
+      "Angular",
+      "NestJS",
+      "PostgreSQL",
+      "PrimeNG",
+      "Tailwind",
+      "Docker",
+      "GITLAB",
+      "Jest",
+      "TypeOrm",
+      "CI/CD",
+      "SAP",
+      "Keycloak",
+      "EntraID",
+      "GraphQL",
+    ],
+  },
+  {
+    title: "Interface de Synchronisation ERP - SalesForce",
+    shortDescription: `Une application pour la synchronisation entre un ERP maison et SalesForce.`,
+    description: ``,
+    technos: [
+      "Angular",
+      "NestJS",
+      "PostgreSQL",
+      "PrimeNG",
+      "Tailwind",
+      "Docker",
+      "GITLAB",
+      "Jest",
+      "TypeOrm",
+      "CI/CD",
+      "Keycloak",
+      "API Bulk",
+      "SalesForce Platform Events",
+      "Redis",
+    ],
+  },
+];
+
+export interface Project {
+  title: string;
+  shortDescription: string;
+  description: string;
+  technos: string[];
+}
