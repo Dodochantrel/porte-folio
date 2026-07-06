@@ -16,7 +16,7 @@ export default function Sidebar() {
         <div className="flex items-center flex-col gap-2">
           <h1 className="text-4xl font-bold">Dorian Chantrel</h1>
           <h3 className="text-xl">Développeur Full-Stack</h3>
-          <p className="text-muted">
+          <p className="text-muted-foreground">
             Je conçois pour vous et avec vous des applications web et des API robustes. A vos coter aujourd'hui et
             demain.
           </p>

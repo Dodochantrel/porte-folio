@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { Project } from "@/app/data/project";
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
+import { MoveDiagonal } from "lucide-react";
 
 export default function ProjectCard(project: Project) {
   return (
-    <div className="flex gap-4 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
+    <div className="group flex gap-4 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+      
       <Image
         width={160}
         height={80}
@@ -14,21 +16,30 @@ export default function ProjectCard(project: Project) {
       />
 
       <div className="flex flex-col py-2">
-        <h5 className="text-lg font-bold">{project.title}</h5>
+        <h5 className="flex items-center gap-2 text-lg font-bold">
+          {project.title}
 
-        <p className="mt-2 text-gray-600">{project.shortDescription}</p>
+          <MoveDiagonal
+            className="
+              h-4 w-4
+              transition-all duration-300 ease-in-out
+              group-hover:text-green-500
+              group-hover:scale-125
+            "
+          />
+        </h5>
 
-        <div className="flex flex-wrap gap-2 mt-auto">
+        <p className="mt-2 text-gray-600">
+          {project.shortDescription}
+        </p>
+
+        <div className="mt-auto flex flex-wrap gap-2">
           {project.technos.slice(0, 3).map((techno) => (
-            <Badge key={techno}>
-              {techno}
-            </Badge>
+            <Badge key={techno}>{techno}</Badge>
           ))}
 
           {project.technos.length > 3 && (
-            <Badge>
-              +{project.technos.length - 3}
-            </Badge>
+            <Badge>+{project.technos.length - 3}</Badge>
           )}
         </div>
       </div>
