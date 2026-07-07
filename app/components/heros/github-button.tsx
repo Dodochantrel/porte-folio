@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 export default function GithubButton() {
   return (
-    <Button asChild variant="outline" size="sm">
+    <Button asChild variant="outline">
           <a
             href="https://github.com/Dodochantrel"
             target="_blank"

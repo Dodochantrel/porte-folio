@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 export default function LinkedinButton() {
   return (
-    <Button asChild variant="outline" size="sm">
+    <Button asChild variant="outline">
       <a
         href="https://www.linkedin.com/in/dorian-chantrel/"
         target="_blank"
