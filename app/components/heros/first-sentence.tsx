@@ -5,22 +5,20 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 const phrases = [
   [
-    { text: "Build" },
-    { text: "awesome" },
-    { text: "apps" },
-    { text: "fast.", className: "text-blue-500 dark:text-blue-500" },
+    { text: "développeur" },
+    { text: "full-stack.", className: "text-blue-500 dark:text-blue-500" },
   ],
   [
-    { text: "Create" },
-    { text: "modern" },
-    { text: "websites" },
-    { text: "easily.", className: "text-purple-500 dark:text-purple-500" },
+    { text: "créateur" },
+    { text: "de" },
+    { text: "sites" },
+    { text: "web" },
+    { text: "modernes.", className: "text-purple-500 dark:text-purple-500" },
   ],
   [
-    { text: "Launch" },
-    { text: "your" },
-    { text: "project" },
-    { text: "today.", className: "text-green-500 dark:text-green-500" },
+    { text: "développeur" },
+    { text: "à" },
+    { text: "l'écoute.", className: "text-pink-500 dark:text-pink-500" },
   ],
 ];
 
@@ -30,18 +28,20 @@ export default function FirstSentence() {
   useEffect(() => {
     const interval = window.setInterval(() => {
       setIndex((current) => (current + 1) % phrases.length);
-    }, 5000);
+    }, 6000);
 
     return () => window.clearInterval(interval);
   }, []);
 
   return (
-    <section className="flex">
-      <p>Besoin</p>
+    <section className="flex items-center gap-1 text-base font-normal">
+      <p>Besoin d'un</p>
+
       <TypewriterEffect
         key={index}
         words={phrases[index]}
-        cursorClassName="bg-blue-500"
+        cursorClassName="bg-blue-500 h-5"
+        className="text-base font-normal normal-case text-left"
       />
     </section>
   );
