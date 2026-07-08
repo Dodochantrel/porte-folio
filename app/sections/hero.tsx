@@ -1,6 +1,10 @@
+import FirstSentence from "../components/heros/first-sentence";
+
 export default function Hero() {
   return (
-    <section className="h-screen flex justify-center">
+    <section className="h-screen flex justify-center flex-col">
+
+      <FirstSentence />
 
       <div className="flex flex-col items-center justify-center gap-4">
         <p>

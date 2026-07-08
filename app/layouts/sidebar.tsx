@@ -2,8 +2,8 @@
 
 import { Separator } from "@/components/ui/separator";
 
-import GithubButton from "../components/heros/github-button";
-import LinkedinButton from "../components/heros/linkedin-button";
+import GithubButton from "../components/sidebar/github-button";
+import LinkedinButton from "../components/sidebar/linkedin-button";
 import Profile from "../components/profile";
 import Navigation from "../components/navigation";
 
